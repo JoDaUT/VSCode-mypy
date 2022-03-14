@@ -87,7 +87,8 @@ print(result)
 
 You should see a lot of errors because `sum` expect two int parameters, but then a float value is passed to the function. However, `sub` has no type definition, no errors are displayed.
 
-![example.py]('https://github.com/JoDaUT/VSCode-mypy/blob/main/xample.png?raw=true')
+![example](https://user-images.githubusercontent.com/47344349/158103410-7259f25d-b20c-49a8-9861-b5095e33aaa7.png)
+
 
 This is really powerful, because you can see errors only if you begin typing functions and variables, and it will not conflict with your existing code and libraries you require.
 
@@ -112,9 +113,16 @@ from venv import create
 from django.http import JsonResponse
 from django.shortcuts import render
 
+# Create your views here.
+
 
 def createGreeting(name: str) -> str:
     return f'Hello {name}!!!!'
+
+
+def getPower(n):
+    x = 42 == 'no'
+    return n**2
 
 
 def index(request):
@@ -122,11 +130,17 @@ def index(request):
     message = createGreeting(100)
     message: int = 'asdf'
     message: str = 1234
+
+    n = getPower('asdf')
+
     return JsonResponse({'message': message})
 
 ```
 
 In your `clients.urls.py` you should see a lot of errors. However, there are no issues in your Django imports and created code, because it will only check when you type variables and functions.
+
+![Django errors](https://user-images.githubusercontent.com/47344349/158103456-dce08f43-18d6-42c3-8d34-a32e7020bfaf.png)
+
 
 # Conclusions
 
