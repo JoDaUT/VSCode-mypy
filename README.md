@@ -139,7 +139,8 @@ def index(request):
 
 In your `clients.urls.py` you should see a lot of errors. However, there are no issues in your Django imports and created code, because it will only check when you type variables and functions.
 
-![Django errors](https://user-images.githubusercontent.com/47344349/158103456-dce08f43-18d6-42c3-8d34-a32e7020bfaf.png)
+![Django errors](https://user-images.githubusercontent.com/47344349/158103955-4cb6cd43-dbae-4369-83ff-52bfa606e1df.png)
+
 
 
 # Conclusions
