@@ -87,7 +87,7 @@ print(result)
 
 You should see a lot of errors because `sum` expect two int parameters, but then a float value is passed to the function. However, `sub` has no type definition, no errors are displayed.
 
-![example.py]('https://github.com/JoDaUT/VSCode-mypy/blob/main/assets/example.png?raw=true')
+![example.py]('https://raw.githubusercontent.com/JoDaUT/VSCode-mypy/main/assets/example.png')
 
 This is really powerful, because you can see errors only if you begin typing functions and variables, and it will not conflict with your existing code and libraries you require.
 
