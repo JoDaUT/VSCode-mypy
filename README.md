@@ -1,4 +1,4 @@
-# Check types in a Python project with Visual Studio Code
+# Python type checking with Visual Studio Code
 
 When working in a team, it's important to establish a set of best practices that allows all the developers, old and new, to be productive while reducing the number of bugs and time required to understand a block of code.
 
@@ -120,6 +120,8 @@ from django.shortcuts import render
 from urllib.request import Request
 from venv import create
 
+# Create your views here.
+
 
 def createGreeting(name: str) -> str:
     return f'Hello {name}!!!!'
@@ -141,6 +143,8 @@ def index(request):
 ```
 
 Despite many errors appeared in `clients.urls.py`, the project is still running. Django imports and default code are fine because it will only check variables and functions that you manually type.
+
+![Django errors](https://user-images.githubusercontent.com/47344349/158103955-4cb6cd43-dbae-4369-83ff-52bfa606e1df.png)
 
 ![Django errors](https://user-images.githubusercontent.com/47344349/158103955-4cb6cd43-dbae-4369-83ff-52bfa606e1df.png)
 
