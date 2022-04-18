@@ -83,7 +83,6 @@ def sub(n1, n2):
 
 result = sum(1, 2.5)
 print(result)
-
 result = sub(1, 2.5)
 print(result)
 
@@ -91,7 +90,8 @@ print(result)
 
 As you can see in the image below, a lot of errors are displayed because `sum` expect two int parameters, but is given a float value. However, `sub` lacks a type definition, no errors are displayed.
 
-![example](https://user-images.githubusercontent.com/47344349/158103410-7259f25d-b20c-49a8-9861-b5095e33aaa7.png)
+![First Simple Example](https://user-images.githubusercontent.com/47344349/163740741-0162f7e2-2cf4-4059-a319-442ae0243aa1.png)
+
 
 This is really powerful. Errors are displayed only in functions and variables that are required, and it will not interfere with your existing codebase.
 
@@ -120,8 +120,6 @@ from django.shortcuts import render
 from urllib.request import Request
 from venv import create
 
-# Create your views here.
-
 
 def createGreeting(name: str) -> str:
     return f'Hello {name}!!!!'
@@ -144,9 +142,8 @@ def index(request):
 
 Despite many errors appeared in `clients.urls.py`, the project is still running. Django imports and default code are fine because it will only check variables and functions that you manually type.
 
-![Django errors](https://user-images.githubusercontent.com/47344349/158103955-4cb6cd43-dbae-4369-83ff-52bfa606e1df.png)
+![02](https://user-images.githubusercontent.com/47344349/163740770-08bce502-8666-488a-9817-409eb3a91262.png)
 
-![Django errors](https://user-images.githubusercontent.com/47344349/158103955-4cb6cd43-dbae-4369-83ff-52bfa606e1df.png)
 
 # Conclusions
 
